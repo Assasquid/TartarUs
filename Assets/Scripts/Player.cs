@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
 
         Vector3 moveDir = new Vector3(inputVector.x, 0f, inputVector.y);
         transform.position += moveDir * moveSpeed * Time.deltaTime;
-        Debug.Log(inputVector);
+
+        transform.forward = moveDir;
     }
 }
