@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 093d8ee3966c9464c8810b519a78db03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseCounter: {fileID: 0}
+  baseCounter: {fileID: 7562243330876578333}
   visualGameObjectArray:
   - {fileID: 5934972764890130884}
   - {fileID: 7688332062854876461}
@@ -291,6 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterTopPoint: {fileID: 3195192959617942198}
+  cutKitchenObjectSO: {fileID: 11400000, guid: 0d71c130560cab64a8edd3455bcf78d4, type: 2}
 --- !u!1001 &8455662759707665968
 PrefabInstance:
   m_ObjectHideFlags: 0
