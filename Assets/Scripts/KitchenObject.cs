@@ -43,4 +43,16 @@ public class KitchenObject : MonoBehaviour
         kitchenObjectParent.ClearKitchenObject();
         Destroy(gameObject);
     }
+
+    // Making it static makes it so that the function belong to the class itself as opposed to any instance
+    public static KitchenObject SpawnKitchenObject(KitchenObjectSO KitchenObjectSO, IKitchenObjectParent kitchenObjectParent)
+    {
+        Transform kitchenObjectTransform = Instantiate(KitchenObjectSO.prefab);
+
+        KitchenObject kitchenObject = kitchenObjectTransform.GetComponent<KitchenObject>();
+
+        kitchenObject.SetKitchenObjectParent(kitchenObjectParent);
+
+        return kitchenObject;
+    }
 }
